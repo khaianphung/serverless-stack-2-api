@@ -117,6 +117,7 @@ functions:
 # Create our resources with separate CloudFormation templates
 # Create our resources with separate CloudFormation templates
 # Create our resources with separate CloudFormation templates
+# Create our resources with separate CloudFormation templates
 resources:
   # API Gateway Errors
   - ${file(resources/api-gateway-errors.yml)}
@@ -126,3 +127,4 @@ resources:
   - ${file(resources/s3-bucket.yml)}
   # Cognito
   - ${file(resources/cognito-user-pool.yml)}
+  - ${file(resources/cognito-identity-pool.yml)}
