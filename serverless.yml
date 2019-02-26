@@ -115,8 +115,11 @@ functions:
           cors: true
           authorizer: aws_iam
 # Create our resources with separate CloudFormation templates
+# Create our resources with separate CloudFormation templates
 resources:
   # API Gateway Errors
   - ${file(resources/api-gateway-errors.yml)}
   # DynamoDB
   - ${file(resources/dynamodb-table.yml)}
+  # S3
+  - ${file(resources/s3-bucket.yml)}
